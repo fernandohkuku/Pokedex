@@ -44,10 +44,11 @@ fun PokemonCard(
             )
             Spacer(modifier = Modifier.height(12.dp))
             Text(
+                maxLines = 1,
                 text = name.toString(),
                 style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
                 color = MaterialTheme.colorScheme.onBackground,
-                fontSize = 12.sp
+                fontSize = 12.sp,
             )
             Text(
                 text = type.toString(),
